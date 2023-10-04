@@ -1,2 +1,2 @@
 # libft
-Personal Lbrary
+Personal Library
