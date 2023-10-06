@@ -24,6 +24,7 @@ typedef struct s_list
 }			t_list;
 
 int		ft_atoi(const char *s);
+int		ft_atoi_base(char *str, char *base);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_isalnum(int c);
