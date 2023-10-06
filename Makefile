@@ -59,8 +59,7 @@ LIST_SRC = ft_atoi.c \
 	ft_lstsize.c \
 	ft_lstmap.c
 
-LIST_SRC +=	ft_itoa.c \
-	ft_printf.c \
+LIST_SRC += ft_printf.c \
 	print_int.c \
 	print_low_hex.c \
 	print_percent.c \
@@ -69,8 +68,8 @@ LIST_SRC +=	ft_itoa.c \
 	print_unsigned_dec.c \
 	print_up_hex.c
 
-LIST_SRC +=	get_next_line_utils.c \
-	get_next_line.c
+LIST_SRC +=	get_next_line.c \
+	get_next_line_utils.c
 
 DIR_SRC += src/
 DIR_SRC += src/libft/

@@ -1,5 +1,7 @@
-#include "get_next_line.h"
 #include <stdlib.h>
+
+#include "get_next_line.h"
+#include "libft.h"
 
 char *sub_line_in_buf(char *s, size_t index_start, size_t len) 
 {

@@ -18,8 +18,6 @@ int     check_empty_buf(char *buf, size_t buffer_size);
 size_t  get_line_len(char *buf, size_t buffer_size, size_t index_start);
 size_t  get_start_line(char *buf, size_t buffer_size);
 char    *sub_line_in_buf(char *s, size_t start, size_t len);
-size_t   ft_strlen(const char *s);
 char    *ft_strjoin(char    *s1, char    *s2);
-char    *ft_strchr(const char *s, int c);
 
 #endif 
