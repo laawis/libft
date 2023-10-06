@@ -1,6 +1,7 @@
 # Moi
 .DS_Store
 .vscode/
+libf
 
 # Prerequisites
 *.d

@@ -72,7 +72,7 @@ LIST_SRC +=	get_next_line.c \
 	get_next_line_utils.c
 
 DIR_SRC += src/
-DIR_SRC += src/libft/
+DIR_SRC += src/libft_src/
 DIR_SRC += src/ft_printf/
 DIR_SRC += src/gnl/
 
