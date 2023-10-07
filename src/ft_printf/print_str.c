@@ -16,6 +16,7 @@ size_t    ft_strlen(const char *str)
 
 int print_str(char *str)
 {
+
     if (str == NULL)
     {
         return (-1);

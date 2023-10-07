@@ -24,12 +24,12 @@ char *sub_line_in_buf(char *s, size_t index_start, size_t len)
   return (str);
 }
 
-size_t ft_strlen(const char *s) 
+size_t ft_strlen(const char *str) 
 {
   size_t i;
 
   i = 0;
-  while (s[i])
+  while (str[i])
     i++;
   return (i);
 }
@@ -59,10 +59,8 @@ char *ft_strjoin(char *s1, char *s2)
     free(s1);
     j = 0;
     while (s2[j])
-    {
         str[i++] = s2[j++];
-        str[i] = '\0';
-    }
+    str[i] = '\0';
     free(s2);
   return (str);
 }
