@@ -11,7 +11,7 @@ char *get_next_line(int fd)
 
   if (BUFFER_SIZE <= 0 || fd < 0)
     return (NULL);
-  if (check_empty_buf(buf[fd], BUFFER_SIZE)) 
+  if (check_empty_buf(buf[fd], BUFFER_SIZE))
   {
     if (read(fd, buf[fd], BUFFER_SIZE) <= 0)
       return (NULL);
@@ -22,22 +22,22 @@ char *get_next_line(int fd)
     if (read(fd, buf[fd], BUFFER_SIZE) == 0)
       return (line);
     line_tmp = extract_line(buf[fd], BUFFER_SIZE);
-    if (line_tmp == NULL) 
+    if (line_tmp == NULL)
     {
       free(line);
       return (NULL);
     }
-    line = ft_strjoin(line, line_tmp);
+    line = ft_strjoin_free(line, line_tmp);
   }
   return (line);
 }
 
-int check_empty_buf(char *buf, size_t buffer_size) 
+int check_empty_buf(char *buf, size_t buffer_size)
 {
   size_t i;
 
   i = 0;
-  while (i < buffer_size) 
+  while (i < buffer_size)
   {
     if (buf[i] != '\0')
       return (0);
@@ -46,7 +46,7 @@ int check_empty_buf(char *buf, size_t buffer_size)
   return (1);
 }
 
-char *extract_line(char *buf, size_t buffer_size) 
+char *extract_line(char *buf, size_t buffer_size)
 {
   char *line;
   size_t index_start;
@@ -58,13 +58,13 @@ char *extract_line(char *buf, size_t buffer_size)
   return (line);
 }
 
-size_t get_line_len(char *buf, size_t buffer_size, size_t index_start) 
+size_t get_line_len(char *buf, size_t buffer_size, size_t index_start)
 {
   size_t len;
 
   len = 0;
   while (index_start < buffer_size && buf[index_start] != '\n' &&
-         buf[index_start] != '\0') 
+         buf[index_start] != '\0')
   {
     index_start++;
     len++;

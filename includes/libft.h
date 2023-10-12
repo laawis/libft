@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaollier <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gaollier <gaollier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:00:52 by gaollier          #+#    #+#             */
-/*   Updated: 2022/11/28 17:37:07 by gaollier         ###   ########.fr       */
+/*   Updated: 2023/10/09 16:38:47 by gaollier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "get_next_line.h"
+# include "ft_printf.h"
 
 typedef struct s_list
 {
@@ -68,4 +70,4 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-#endif 
+#endif
