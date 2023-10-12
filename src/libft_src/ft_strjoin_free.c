@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdlib.h> 
 #include <stdio.h>
 
@@ -117,3 +118,17 @@ int    main(int argc, char **argv)
 
 // NULL => adresse qui ne pointe sur RIEN.
 // '\0' ou 0 dans un char c'est la fin d'une chaine de caracteres. Adresse qui pointe sur un char 
+=======
+#include <stdlib.h>
+
+#include "libft.h"
+
+char *ft_strjoin_free(char *const s1, char *const s2)
+{
+	char *const new_s = ft_strjoin(s1, s2);
+
+	free(s1);
+	free(s2);
+	return (new_s);
+}
+>>>>>>> 303316e838b7632af66923a09ef6f10c8dfd34b6

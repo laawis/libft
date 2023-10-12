@@ -11,7 +11,7 @@ char *get_next_line(int fd)
 
   if (BUFFER_SIZE <= 0 || fd < 0)
     return (NULL);
-  if (check_empty_buf(buf[fd], BUFFER_SIZE) == 0)
+  if (check_empty_buf(buf[fd], BUFFER_SIZE))
   {
     if (read(fd, buf[fd], BUFFER_SIZE) <= 0)
       return (NULL);
@@ -32,9 +32,9 @@ char *get_next_line(int fd)
   return (line);
 }
 
-size_t check_empty_buf(const char *buf, size_t buffer_size)
+int check_empty_buf(const char *buf, size_t buffer_size)
 {
-  size_t i;
+   size_t i;
 
   i = 0;
   while (i < buffer_size)
