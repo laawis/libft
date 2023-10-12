@@ -6,7 +6,7 @@
 #    By: gaollier <gaollier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 13:37:55 by gaollier          #+#    #+#              #
-#    Updated: 2023/10/04 23:21:17 by gaollier         ###   ########.fr        #
+#    Updated: 2023/10/12 14:06:56 by gaollier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,7 @@ LIST_SRC = ft_atoi.c \
 	ft_strdup.c \
 	ft_striteri.c \
 	ft_strjoin.c \
+	ft_strjoin_free.c \
 	ft_strlcat.c \
 	ft_strlcpy.c \
 	ft_strlen.c \

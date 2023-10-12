@@ -32,9 +32,9 @@ char *get_next_line(int fd)
   return (line);
 }
 
-int check_empty_buf(char *buf, size_t buffer_size)
+int check_empty_buf(const char *buf, size_t buffer_size)
 {
-  size_t i;
+   size_t i;
 
   i = 0;
   while (i < buffer_size)
