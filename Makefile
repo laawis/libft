@@ -6,7 +6,7 @@
 #    By: gaollier <gaollier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 13:37:55 by gaollier          #+#    #+#              #
-#    Updated: 2023/10/04 23:21:17 by gaollier         ###   ########.fr        #
+#    Updated: 2023/10/12 10:00:18 by gaollier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,7 @@ LIST_SRC = ft_atoi.c \
 	ft_strdup.c \
 	ft_striteri.c \
 	ft_strjoin.c \
+	ft_strjoin_free.c \
 	ft_strlcat.c \
 	ft_strlcpy.c \
 	ft_strlen.c \
@@ -78,13 +79,10 @@ DIR_SRC += src/gnl/
 
 vpath %.c $(DIR_SRC)
 # Virtual Path -> indique au Makefile de faire matcher des .c avec un prefix contenu dans DIR_SRC
-
 ## OBJS
-
 DIR_BUILD = .build/
 OBJ = $(patsubst %.c, $(DIR_BUILD)/%.o, $(LIST_SRC))
 #patsubst -> pattern substitution: Cherche dans LIST_SRC tous les fichiers .c, les transforme en .o
-
 # OBJ = $(LIST_SRC:.c=.o) #### Remplace les .c par des .o
 
 ## HEADERS
