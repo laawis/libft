@@ -6,7 +6,7 @@
 #    By: gaollier <gaollier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 13:37:55 by gaollier          #+#    #+#              #
-#    Updated: 2023/10/12 14:56:25 by gaollier         ###   ########.fr        #
+#    Updated: 2023/10/16 12:55:58 by gaollier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,7 @@ NAME = libft.a
 ## SRCS
 
 LIST_SRC = ft_atoi.c \
+	ft_atoi_base.c \
 	ft_bzero.c \
 	ft_calloc.c \
 	ft_isalnum.c \
