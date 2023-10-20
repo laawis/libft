@@ -3,6 +3,8 @@
 
 # include <stdlib.h>
 
+#include "libft.h"
+
 int    ft_printf(const char *format, ...);
 int    print_str(char *str);
 int    print_ptr(unsigned long long nb);

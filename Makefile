@@ -6,7 +6,7 @@
 #    By: gaollier <gaollier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 13:37:55 by gaollier          #+#    #+#              #
-#    Updated: 2023/10/16 12:55:58 by gaollier         ###   ########.fr        #
+#    Updated: 2023/10/20 16:36:40 by gaollier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,7 +64,6 @@ LIST_SRC = ft_atoi.c \
 LIST_SRC += ft_printf.c \
 	print_int.c \
 	print_low_hex.c \
-	print_percent.c \
 	print_ptr.c \
 	print_str.c \
 	print_unsigned_dec.c \

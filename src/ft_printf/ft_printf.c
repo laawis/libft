@@ -10,7 +10,6 @@ static int    print_conv(va_list args, char c)
     int    count;
 
     count = 0;
-        
     if (c == 'c')
         count = write(1, &c, 1);
     else if (c == 's')
@@ -31,7 +30,7 @@ static int    print_conv(va_list args, char c)
     {
         count = write(1, "%", 1);
         count += write(1, &c, 1);
-    } 
+    }
     if (count <= 0)
         return (-1);
     return (count);
@@ -60,7 +59,7 @@ static int    conversion(va_list args, char c)
             return (-1);
         return (2);
     }
-        
+
 }
 
 int    ft_printf(const char *format, ...)
