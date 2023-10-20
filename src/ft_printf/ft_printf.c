@@ -26,11 +26,6 @@ static int    print_conv(va_list args, char c)
         count = print_up_hex(va_arg(args, unsigned int));
     else if (c == '%')
         count = write(1, "%", 1);
-    else
-    {
-        count = write(1, "%", 1);
-        count += write(1, &c, 1);
-    }
     if (count <= 0)
         return (-1);
     return (count);
